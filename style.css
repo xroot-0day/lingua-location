@@ -20,7 +20,15 @@ body {
     display: flex;
     width: 100vw;
     flex-wrap: nowrap;
-    height: 4.5rem;
+    padding-top: clamp(0.5rem, 5vh, 1rem);
+    height: clamp(50px, 5vh, 72px);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        padding-top: 1rem;
+    }
+    
 }
 
 .logo {
@@ -37,23 +45,37 @@ body {
 }
 
 .ll-link {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 0.338rem + 0.77vw, 1rem);
     color: #fff;
     font-weight: 700;
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+    .ll-link {
+        display: none;
+    }
+    
+}
+
 .logo img {
-    margin-left: 2rem;
-    width: 25px;
-    height: 50px;
-    padding-top: 0.55rem;
+    margin-left: clamp(1rem, -1.308rem + 3.85vw, 2rem);
+    width: clamp(1rem, -0.299rem + 2.17vw, 1.563rem);
+    height: clamp(2rem, -0.596rem + 4.33vw, 3.125rem);
+    padding-top: clamp(0.2rem, -0.608rem + 1.35vw, 0.55rem);
 }
 
 .menu {
     display: flex;
     justify-content: center;
     width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    
 }
 
 .menu ul {
@@ -75,37 +97,34 @@ body {
     width: 25%;
     justify-content: flex-end;
     gap: 1rem;
-    padding-right: 2rem;
-    font-size: 0.75rem;
+    padding-right: clamp(0.5rem, 0.561rem + 1.67vw, 2rem);
+    font-size: clamp(0.5rem, 0.39rem + 0.42vw, 0.75rem);
 }
 
 .loginbutton {
     text-decoration: none;
     border: solid rgba(88, 101, 242, 0.50);
-    border-radius: 0.5rem;
+    border-radius: clamp(0.2rem, 0.068rem + 0.5vw, 0.5rem);
     background: rgba(88, 101, 242, 0.50);
-    box-shadow: 0px 2px 2px 0px rgba(88, 101, 242, 0.49) inset;
+    box-shadow: 0px clamp(0.063rem, 0.035rem + 0.1vw, 0.125rem) clamp(0.063rem, 0.035rem + 0.1vw, 0.125rem) 0px rgba(88, 101, 242, 0.49) inset;
     backdrop-filter: blur(5px);
-    padding: 0.5rem;
+    padding: clamp(0.2rem, 0.068rem + 0.5vw, 0.5rem);
     align-self: center;
     color: white;
 }
 
-.signupbutton {
-    text-decoration: none;
-    border: solid rgba(88, 209, 242, 0.19);
-    background: rgba(88, 209, 242, 0.19);
-    box-shadow: 0px 2px 2px 0px rgba(88, 209, 242, 0.19) inset;
-    backdrop-filter: blur(5px);
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    align-self: center;
-    color: white;
+@media screen and (max-width: 768px) {
+    .authbuttons {
+        justify-content: flex-end;
+        align-self: flex-end;
+        margin-left: auto;
+    }
+    
 }
 
 /* Root Container CSS */
 
-.root-container {
+/* .root-container {
     max-width: 50%;
     margin: 0 auto;
 }
@@ -113,7 +132,7 @@ body {
 .container-1 {
     display: flex;
     flex-wrap: nowrap;
-    padding: 5rem 0;
+    padding-top: 5rem;
     min-height: 30vh;
 }
 
@@ -230,4 +249,4 @@ body {
     background-color: #fff;
     justify-content: center;
     
-}
+} */
