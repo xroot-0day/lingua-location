@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Add Montserrat font, set style to normal, optical-sizing auto, secondary font sans-serif */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background: rgb(27,26,48);
+    background: linear-gradient(160deg, rgba(27,26,48,1) 0%, rgba(8,10,62,1) 17%, rgba(20,22,88,1) 42%, rgba(21,26,191,1) 74%, rgba(23,27,127,1) 93%, rgba(25,30,135,1) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: nowrap;
+    height: 4.5rem;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo a {
+    justify-content: center;
+    text-decoration: none;
+}
+
+.ll-link {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo img {
+    margin-left: 2rem;
+    width: 25px;
+    height: 50px;
+    padding-top: 0.55rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 3rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.authbuttons {
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 2rem;
+    font-size: 0.75rem;
+}
+
+.loginbutton {
+    text-decoration: none;
+    border: solid rgba(88, 101, 242, 0.50);
+    border-radius: 0.5rem;
+    background: rgba(88, 101, 242, 0.50);
+    box-shadow: 0px 2px 2px 0px rgba(88, 101, 242, 0.49) inset;
+    backdrop-filter: blur(5px);
+    padding: 0.5rem;
+    align-self: center;
+    color: white;
+}
+
+.signupbutton {
+    text-decoration: none;
+    border: solid rgba(88, 209, 242, 0.19);
+    background: rgba(88, 209, 242, 0.19);
+    box-shadow: 0px 2px 2px 0px rgba(88, 209, 242, 0.19) inset;
+    backdrop-filter: blur(5px);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    align-self: center;
+    color: white;
+}
+
+/* Root Container CSS */
+
+.root-container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.container-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5rem 0;
+    min-height: 30vh;
+}
+
+.title-container {
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: clamp(3rem, 0.826rem + 3.48vw, 5rem);
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0px 10px 0px rgba(255, 255, 255, 1);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 100;
+}
+
+.next-to-title-container {
+    width: 50%;
+    display: flex;
+    height: 60vh;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.picture-container {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+.devices {
+    position: absolute;
+    z-index: 2;
+    left: 2rem;
+    top: -4rem;
+}
+
+.star {
+    position: absolute;
+    z-index: 3;
+    width: 10rem; 
+    top: 5rem; 
+}
+
+.book {
+    position: absolute;
+    top: -5rem; 
+    left: 16rem;
+    z-index: 1; 
+}
+
+.arch-text {
+    font-size: 1.5rem;
+    color: #D1EDFF;
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+}
+
+.get-started-button {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    border: solid;
+    border-radius: 0.5rem;
+    border: rgba(88, 101, 242, 0.50);
+    background: rgba(88, 101, 242, 0.50);
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.get-started-button:hover {
+    background: rgba(88, 101, 242, 0.70);
+    box-shadow: 0px 2px 2px 0px rgba(88, 101, 242, 0.70) inset;
+}
+
+.arch-text span {
+    display: inline-block;
+    transform-origin: bottom left;
+}
+
+.container-2 {
+    display: flex;
+    max-width: 100%;
+}
+
+.transition {
+    left: -25rem;
+    transform: rotate(180deg);
+    opacity: .5;
+    z-index: -3;
+    position: absolute;
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5rem 0;
+    min-height: 30vh;
+}
+
+.marquee-component-1 {
+    display: flex;
+    min-width: 100vw;
+    height: 15vh;
+    background-color: #fff;
+    justify-content: center;
+    
+}
